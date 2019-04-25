@@ -219,11 +219,30 @@
 
 #endif // ULTRA_LCD
 
+
+#if ENABLED(ZONESTAR_LCD)
+   #define ADC_KEYPAD_PIN  P1_30   // (37) not 5V tolerant
+//   #define LCD_PINS_RS     P1_19
+//   #define LCD_PINS_ENABLE P1_18
+//   #define LCD_PINS_D4     P1_20
+//   #define LCD_PINS_D5     P1_21
+//   #define LCD_PINS_D6     P1_22
+//   #define LCD_PINS_D7     P1_23
+
+//     //#define BTN_ENC         P0_28   // (58) open-drain
+//     //#define BTN_EN1         P3_26   // (31) J3-2 & AUX-4
+//     //#define BTN_EN2         P3_25   // (33) J3-4 & AUX-4
+//     //#define SD_DETECT_PIN   P1_31   // (49) (NOT 5V tolerant)
+//     //#define LCD_SDSS        P0_16   // (16) J3-7 & AUX-4
+
+#endif // ZONESTAR_LCD
+
+
 //#define USB_SD_DISABLED
 #define USB_SD_ONBOARD        // Provide the onboard SD card to the host as a USB mass storage device
 
-#define LPC_SD_LCD            // Marlin uses the SD drive attached to the LCD
-//#define LPC_SD_ONBOARD        // Marlin uses the SD drive on the control board
+//#define LPC_SD_LCD            // Marlin uses the SD drive attached to the LCD
+#define LPC_SD_ONBOARD        // Marlin uses the SD drive on the control board
 
 #if ENABLED(LPC_SD_LCD)
 

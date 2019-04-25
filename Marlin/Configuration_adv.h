@@ -470,6 +470,7 @@
  * Add the G34 command to align multiple Z steppers using a bed probe.
  */
 //#define Z_STEPPER_AUTO_ALIGN
+//TODO: Tweak this!
 #if ENABLED(Z_STEPPER_AUTO_ALIGN)
   // Define probe X and Y positions for Z1, Z2 [, Z3]
   #define Z_STEPPER_ALIGN_X { 10, 150, 290 }
@@ -586,6 +587,7 @@
  *       ±5mm of true values for G425 to succeed.
  */
 //#define CALIBRATION_GCODE
+// TODO: Fkkn.. YES PLOX!
 #if ENABLED(CALIBRATION_GCODE)
 
   #define CALIBRATION_MEASUREMENT_RESOLUTION     0.01 // mm
@@ -714,6 +716,7 @@
   #define FEEDRATE_CHANGE_BEEP_FREQUENCY 440
 #endif
 
+//TODO: Tweak here
 // Include a page of printer information in the LCD Main Menu
 //#define LCD_INFO_MENU
 
